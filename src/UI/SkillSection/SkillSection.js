@@ -14,8 +14,9 @@ import githublogo from "../../assets/logos/githublogo.svg";
 import vscodelogo from "../../assets/logos/vscodelogo.svg";
 import msofficelogo from "../../assets/logos/msofficelogo.svg";
 import PersonProgramming from "../../assets/logos/personProgramming.svg";
+import personCoding from "../../assets/logos/personCoding.svg";
 
-const SkillSection = () => {
+const SkillSection = (props) => {
   const infoArrayOne = [
     [JavaScriptLogo, "JavaScript"],
     [PythonLogo, "Python"],
@@ -39,14 +40,15 @@ const SkillSection = () => {
   const languageSection = infoArrayOne.map((arr, index) => {
     return (
       <>
-        <div className="flex flex-col">
+        <div className="flex flex-col phone:mt-5">
           <img
             src={arr[0]}
-            width="70px"
-            height="90px"
-            className="mx-auto"
+            // width="70px"
+            // height="90px"
+            className="mx-auto max-w-[70px] max-h-[90px]"
           ></img>
           <h3 className="text-[20px] mx-auto mt-5 ">{arr[1]}</h3>
+          <h1 className="invisible phone:visible mx-auto">_____________</h1>
         </div>
       </>
     );
@@ -55,14 +57,15 @@ const SkillSection = () => {
   const webDevToolsSection = infoArrayTwo.map((arr) => {
     return (
       <>
-        <div className="flex flex-col">
+        <div className="flex flex-col phone:mt-5">
           <img
             src={arr[0]}
-            width="70px"
-            height="70px"
-            className="mx-auto"
+            // width="70px"
+            // height="70px"
+            className="mx-auto max-w-[70px] max-h-[90px]"
           ></img>
           <h3 className="text-[20px] mx-auto mt-5">{arr[1]}</h3>
+          <h1 className="invisible phone:visible mx-auto">_____________</h1>
         </div>
       </>
     );
@@ -71,14 +74,15 @@ const SkillSection = () => {
   const otherToolsSection = infoArrayThree.map((arr) => {
     return (
       <>
-        <div className="flex flex-col">
+        <div className="flex flex-col phone:mt-5">
           <img
             src={arr[0]}
-            width="70px"
-            height="90px"
-            className="mx-auto"
+            // max-width="100%"
+            // height="auto"
+            className="mx-auto max-w-[70px] max-h-[90px]"
           ></img>
           <h3 className="text-[20px] mx-auto mt-5">{arr[1]}</h3>
+          <h1 className="invisible phone:visible mx-auto">_____________</h1>
         </div>
       </>
     );
@@ -87,33 +91,45 @@ const SkillSection = () => {
   return (
     <>
       <div className="bg-ocean-light-blue ">
-        <div className="flex flex-col   h-screen font-fredoka-one relative">
+        <div className="flex flex-col   h-[100%] font-fredoka-one relative">
           <div className="flex flex-col mt-[30px] mx-auto">
-            <h1 className="text-[70px] mx-auto">Skills</h1>
-            <h3 className="text-[25px]">My technical abilities</h3>
+            <h1
+              className="text-[70px]  phone:text-[50px] mx-auto"
+              ref={props.ref1}
+            >
+              Skills
+            </h1>
+            <h3 className="text-[30px] phone:text-[18px] mb-9">
+              My technical abilities
+            </h3>
           </div>
           <img
-            src={PersonProgramming}
-            className="absolute top-[250px] left-[1100px]"
+            src={personCoding}
+            className="absolute top-[190px] left-[1100px] phone:hidden"
           ></img>
           <div className="flex flex-col mx-[98px]">
-            <h1 className="text-[30px]">Programming Languages:</h1>
-            <div className="flex space-x-[123px] space-around mt-3">
+            <h1 className="text-[30px] phone:text-[25px] phone:mx-auto">
+              Programming Languages:
+            </h1>
+            <div className="flex phone:flex-col space-x-[60px] phone:space-x-0  space-around   mt-10">
               {languageSection}
             </div>
           </div>
           <div className="flex flex-col mx-[98px] mt-5">
-            <h1 className="text-[30px]">Web Development Tools:</h1>
-            <div className="flex space-x-[123px] space-around mt-3">
+            <h1 className="text-[30px] phone:text-[25px]">
+              Web Development Tools:
+            </h1>
+            <div className="flex phone:flex-col space-x-[60px] phone:space-x-0 space-around   mt-10">
               {webDevToolsSection}
             </div>
           </div>
           <div className="flex flex-col mx-[98px] mt-5">
-            <h1 className="text-[30px]">Other Tools:</h1>
-            <div className="flex space-x-[123px] space-around mt-3">
+            <h1 className="text-[30px] phone:text-[25px] mt-5">Other Tools:</h1>
+            <div className="flex phone:flex-col space-x-[60px] phone:space-x-0 space-around phone:mt-3 mt-10">
               {otherToolsSection}
             </div>
           </div>
+          <div className="h-[200px]"></div>
           <div class="custom-shape-divider-bottom-165959107242">
             <svg
               data-name="Layer 1"

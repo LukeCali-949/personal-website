@@ -1,15 +1,58 @@
-import React from "react";
+import React, { useRef } from "react";
+
+import githublogo from "../../assets/logos/githublogo.svg";
+import linkedinLogo from "../../assets/logos/linkedinlogo.svg";
 import "./Header.css";
 
-const Header = () => {
+const Header = (props) => {
+  const handleClick1 = () => {
+    props.ref1.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  const handleClick2 = () => {
+    props.ref2.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  const handleClick3 = () => {
+    props.ref3.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <div className="bg-black-backdrop">
         <div className="flex flex-col items-center justify-center h-screen font-fredoka-one relative">
-          <h1 className="text-[70px] text-ocean-light-blue">
+          <div class="navbar text-ocean-light-blue bg-black-backdrop absolute top-0">
+            <div class="flex-1 flex space-x-7 ml-[1%]">
+              <a href="https://github.com/LukeCali-949" target="_blank">
+                <img src={githublogo} className="w-[40px] phone:w-[30px]"></img>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/luke-meng-53746b221/"
+                target="_blank"
+              >
+                <img
+                  src={linkedinLogo}
+                  className="w-[40px] phone:w-[30px]"
+                ></img>
+              </a>
+            </div>
+            <div class="flex-none phone:text-[11px] phone:space-x-[100px]">
+              <ul class="menu menu-horizontal p-0">
+                <li>
+                  <a onClick={handleClick1}>Skills</a>
+                </li>
+                <li>
+                  <a onClick={handleClick2}>Project</a>
+                </li>
+
+                <li>
+                  <a onClick={handleClick3}>Experience</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h1 className="text-[70px] text-ocean-light-blue phone:text-[30px] ">
             Hello, I am Luke Meng
           </h1>
-          <h3 className="text-[25px] text-ocean-medium-blue">
+          <h3 className="text-[25px] text-ocean-medium-blue phone:text-[14px]">
             Frontend Developer specializing in React.js
           </h3>
           <div class="custom-shape-divider-bottom-1659591072">

@@ -12,7 +12,10 @@ module.exports = {
         "ocean-dark-blue": "#005f6b",
         "black-backdrop": "#343838",
       },
+      screens: {
+        phone: { max: "782px" },
+      },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
