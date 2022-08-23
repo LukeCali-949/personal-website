@@ -21,7 +21,6 @@ const SkillSection = (props) => {
     [JavaScriptLogo, "JavaScript"],
     [PythonLogo, "Python"],
     [JavaLogo, "Java"],
-    [cSharpLogo, "C#"],
   ];
 
   const infoArrayTwo = [

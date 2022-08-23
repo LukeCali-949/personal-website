@@ -6,8 +6,8 @@ import secondprojsnip from "../../assets/projectpics/secondprojsnip.PNG";
 const ProjectsSection = (props) => {
   return (
     <>
-      <div className="bg-black-backdrop">
-        <div className="flex flex-col items-center  h-screen  phone:h-[100%] font-fredoka-one relative">
+      <div className="bg-black-backdrop h-[100%]">
+        <div className="flex flex-col items-center h-[100%]  h-screen  phone:h-[100%] font-fredoka-one relative">
           <h1
             className="text-[70px] text-ocean-light-blue mt-[50px] phone:text-[50px]"
             ref={props.ref2}
@@ -19,13 +19,42 @@ const ProjectsSection = (props) => {
               <figure>
                 <img src={firstprojsnip} alt="Shoes" />
               </figure>
-              <div class="card-body">
-                <h2 class="card-title mx-auto">Online BookShelf - July 2022</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div class="card-actions justify-end">
-                  <a role="button" class="btn mx-auto">
-                    Link
-                  </a>
+              <div class="card-body space-y-0 ">
+                <h2 class="card-title mx-auto mb-[10px]">
+                  Online BookShelf - July 2022
+                </h2>
+                <p className="font-bold text-[17px]">Technologies Used:</p>
+                <p>
+                  <span className="font-bold">React.js:</span> useState,
+                  useEffect, props
+                </p>
+                <p className="mt-0">
+                  <span className="font-bold">Tailwindcss:</span> flexbox, image
+                  manipulation, content structuring and designing
+                </p>
+                <p className="hidden"></p>
+
+                <div className="flex">
+                  <div class="card-actions justify-end mr-auto">
+                    <a
+                      role="button"
+                      class="btn mx-auto "
+                      href="https://github.com/LukeCali-949/Bookshelf-Proj"
+                      target="_blank"
+                    >
+                      Github
+                    </a>
+                  </div>
+                  <div class="card-actions justify-end">
+                    <a
+                      role="button"
+                      class="btn mx-auto "
+                      href="https://bookshelf-app-89bff.web.app/"
+                      target="_blank"
+                    >
+                      Website Link
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -34,19 +63,49 @@ const ProjectsSection = (props) => {
                 <img src={secondprojsnip} alt="Shoes" />
               </figure>
               <div class="card-body">
-                <h2 class="card-title mx-auto ">
+                <h2 class="card-title mx-auto mb-[10px]">
                   Trivia Game Website - July 2022
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div class="card-actions justify-end">
-                  <a role="button" class="btn mx-auto ">
-                    Link
-                  </a>
+                <p className="font-bold text-[17px]">Technologies Used:</p>
+                <p>
+                  <span className="font-bold">React.js:</span> useState,
+                  useContext, useEffect, React Router, props
+                </p>
+                <p>
+                  <span className="font-bold">Tailwindcss:</span> flexbox, image
+                  manipulation, content structuring and designing
+                </p>
+                <p className="mb-[10px]">
+                  <span className="font-bold ">Asynchronous JavaScript:</span>{" "}
+                  GET request to opentdb API (opentdb.com)
+                </p>
+                <div className="flex">
+                  <div class="card-actions justify-end mr-auto">
+                    <a
+                      role="button"
+                      class="btn mx-auto "
+                      href="https://github.com/LukeCali-949/my-project-3"
+                      target="_blank"
+                    >
+                      Github
+                    </a>
+                  </div>
+                  <div class="card-actions justify-end">
+                    <a
+                      role="button"
+                      class="btn mx-auto "
+                      href="https://trivia-app-c1c71.web.app/"
+                      target="_blank"
+                    >
+                      Website Link
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="custom-shape-divider-bottom-1659591072">
+          <div className="h-[200px]"></div>
+          <div class="custom-shape-divider-bottom-1659591072 ">
             <svg
               data-name="Layer 1"
               xmlns="http://www.w3.org/2000/svg"
