@@ -40,7 +40,7 @@ const Header = (props) => {
                   <a onClick={handleClick1}>Skills</a>
                 </li>
                 <li>
-                  <a onClick={handleClick2}>Project</a>
+                  <a onClick={handleClick2}>Projects</a>
                 </li>
 
                 <li>
@@ -53,7 +53,7 @@ const Header = (props) => {
             Hello, I am Luke Meng
           </h1>
           <h3 className="text-[25px] text-ocean-medium-blue phone:text-[14px]">
-            Frontend Developer specializing in React.js
+            Web Developer specializing in React.js
           </h3>
           <div class="custom-shape-divider-bottom-1659591072">
             <svg

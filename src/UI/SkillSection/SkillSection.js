@@ -15,16 +15,23 @@ import vscodelogo from "../../assets/logos/vscodelogo.svg";
 import msofficelogo from "../../assets/logos/msofficelogo.svg";
 import PersonProgramming from "../../assets/logos/personProgramming.svg";
 import personCoding from "../../assets/logos/personCoding.svg";
+import typescriptlogo from "../../assets/logos/tslogo.svg";
+import clogo from "../../assets/logos/clogo.svg";
+import nextjsLogo from "../../assets/logos/nextjslogo.svg";
+import supabaseLogo from "../../assets/logos/supabaselogo.svg";
 
 const SkillSection = (props) => {
   const infoArrayOne = [
     [JavaScriptLogo, "JavaScript"],
+    [typescriptlogo, "TypeScript"],
     [PythonLogo, "Python"],
     [JavaLogo, "Java"],
+    [clogo, "C"],
   ];
 
   const infoArrayTwo = [
     [ReactLogo, "React.js"],
+    [nextjsLogo, "Next.js"],
     [TailwindcssLogo, "Tailwind CSS"],
     [htmlogo, "HTML"],
     [csslogo, "CSS"],
@@ -32,6 +39,7 @@ const SkillSection = (props) => {
 
   const infoArrayThree = [
     [githublogo, "GitHub"],
+    [supabaseLogo, "Supabase"],
     [vscodelogo, "VS Code"],
     [msofficelogo, "Microsoft Office"],
   ];
@@ -39,7 +47,7 @@ const SkillSection = (props) => {
   const languageSection = infoArrayOne.map((arr, index) => {
     return (
       <>
-        <div className="flex flex-col phone:mt-5">
+        <div className="flex flex-col phone:mt-5 text-black-backdrop">
           <img
             src={arr[0]}
             // width="70px"
@@ -56,7 +64,7 @@ const SkillSection = (props) => {
   const webDevToolsSection = infoArrayTwo.map((arr) => {
     return (
       <>
-        <div className="flex flex-col phone:mt-5">
+        <div className="flex flex-col phone:mt-5 text-black-backdrop">
           <img
             src={arr[0]}
             // width="70px"
@@ -73,7 +81,7 @@ const SkillSection = (props) => {
   const otherToolsSection = infoArrayThree.map((arr) => {
     return (
       <>
-        <div className="flex flex-col phone:mt-5">
+        <div className="flex flex-col phone:mt-5 text-black-backdrop">
           <img
             src={arr[0]}
             // max-width="100%"
@@ -89,7 +97,7 @@ const SkillSection = (props) => {
 
   return (
     <>
-      <div className="bg-ocean-light-blue ">
+      <div className="bg-ocean-light-blue text-black-backdrop">
         <div className="flex flex-col   h-[100%] font-fredoka-one relative">
           <div className="flex flex-col mt-[30px] mx-auto">
             <h1
@@ -104,7 +112,7 @@ const SkillSection = (props) => {
           </div>
           <img
             src={personCoding}
-            className="absolute top-[190px] left-[1100px] phone:hidden"
+            className="absolute top-[240px] left-[1200px] phone:hidden"
           ></img>
           <div className="flex flex-col mx-[98px]">
             <h1 className="text-[30px] phone:text-[25px] phone:mx-auto">
