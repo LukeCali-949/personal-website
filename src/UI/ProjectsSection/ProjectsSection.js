@@ -9,7 +9,7 @@ const ProjectsSection = (props) => {
   return (
     <>
       <div className="bg-black-backdrop h-[100%]">
-        <div className="flex flex-col items-center h-[100%]  phone:text-black-backdrop  phone:h-[100%] font-fredoka-one relative">
+        <div className="flex flex-col items-center h-[100%]  text-black-backdrop  phone:h-[100%] font-fredoka-one relative">
           <h1
             className="text-[70px] text-ocean-light-blue mt-[50px] phone:text-[50px]"
             ref={props.ref2}

@@ -4,7 +4,7 @@ const ExperienceSection = (props) => {
   return (
     <>
       <div className="bg-ocean-light-blue ">
-        <div className="phone:text-black-backdrop flex flex-col items-center h-screen  phone:h-[100%] font-fredoka-one relative">
+        <div className="text-black-backdrop flex flex-col items-center h-screen  phone:h-[100%] font-fredoka-one relative">
           <h1
             className="text-[70px] phone:text-[30px]   mt-[50px]"
             ref={props.ref3}
