@@ -58,7 +58,7 @@ const ProjectsSection = (props) => {
                         <a
                           role="button"
                           class="btn  phone:w-[70px]"
-                          href="https://link-vault-alpha.vercel.app/"
+                          href="https://link-vault-6zj1ju86m-lukecali-949.vercel.app/"
                           target="_blank"
                         >
                           Website Link
